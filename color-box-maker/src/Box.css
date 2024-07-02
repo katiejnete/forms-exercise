@@ -1,0 +1,6 @@
+.box {
+    background-color: var(--box-bg-color);
+    width: var(--box-width);
+    height: var(--box-height);
+    border: 1px solid black;
+}
