@@ -15,12 +15,12 @@ const TodoList = () => {
   return (
     <>
       <NewTodoForm addTodo={addTodo} />
-      {todos.map((todo) => (
+      {todos.map(({id, task}) => (
         <Todo
-          key={todo.id}
-          id={todo.id}
+          key={id}
+          id={id}
           removeTodo={removeTodo}
-          task={todo.task}
+          task={task}
         />
       ))}
     </>
