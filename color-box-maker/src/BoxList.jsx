@@ -11,14 +11,13 @@ const BoxList = () => {
     setBoxes((boxes) => [...boxes, newBox]);
   };
   function deleteBox(id) {
-    setBoxes(boxes.filter(box => box.id !== id));
-  };
+    setBoxes(boxes.filter((box) => box.id !== id));
+  }
 
   return (
     <>
       <NewBoxForm addBox={addBox} />
-      {boxes.length > 0 &&
-        boxes.map(({ id, backgroundColor, width, height }) => (
+      {boxes.map(({ id, backgroundColor, width, height }) => (
           <Box
             key={id}
             id={id}
